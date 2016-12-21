@@ -1,0 +1,39 @@
+drop database bank;
+create database bank;
+use bank;
+
+create table customer
+(
+ accno int,
+ name varchar(20) NOT NULL, 
+ id varchar(20) UNIQUE,
+ pwd varchar(20),
+ balance real,
+ otp char(14) DEFAULT NULL,
+ giftamt real DEFAULT 0,
+ phone int NOT NULL,
+ status int DEFAULT 0,
+ status1 int,
+ request int,
+ req_grant int,
+ ref_name varchar(20) DEFAULT NULL,
+ primary key (accno)
+);
+
+insert into customer values ( 12345 , 'varun' , 'varunjm', 'exam123', 11000 , NULL , 0 , 8117360650, 0, 0 , 0 , 0 ,NULL);
+insert into customer values ( 11111 , 'supreeth' , 'supreethms', 'exam123', 4000 , NULL , 0 , 9876543210, 0, 0 , 0 , 0 ,NULL);
+insert into customer values ( 13579 , 'preetish' , 'preetishhs', 'exam123', 5000 , NULL , 0 , 9123456789, 0, 0 , 0 , 0 ,NULL);
+insert into customer values ( 10000 , 'sridhar' , 'sridharg', 'exam123', 6000 , NULL , 0 , 8796054321, 0, 0 , 0 , 0 ,NULL);
+
+create table friends
+(
+ acc int,
+ frndacc int,
+ frndname varchar(20) ,
+ flag int 
+);
+
+insert into friends values (12345,11111,'supreeth', 0);
+insert into friends values (12345,13579,'preetish', 0);
+insert into friends values (12345,10000,'sridhar', 0);
+

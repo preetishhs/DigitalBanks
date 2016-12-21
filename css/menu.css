@@ -1,0 +1,176 @@
+#nav,#nav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#nav {
+    background-color: #000000;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    display: table;
+    padding: 10px;
+    position: relative;
+}
+#nav ul {
+    background-color: red;
+    border:1px solid red;
+    border-radius: 0 5px 5px 5px;
+    border-width: 0 1px 1px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    left: -9999px;
+    overflow: hidden;
+    padding: 20px 0 10px;
+    position: absolute;
+    top: -9999px;
+
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    -moz-transition: -moz-transform 0.1s linear;
+    -ms-transition: -ms-transform 0.1s linear;
+    -o-transition: -o-transform 0.1s linear;
+    -webkit-transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;
+}
+#nav li {
+    float: left;
+    position: relative;
+}
+#nav li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    padding: 7px 20px;
+    text-decoration: none;
+}
+#nav li:hover > a {
+    background-color: red;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+}
+#nav li:hover > a.hsubs {
+    border-radius: 5px 5px 0 0;
+}
+#nav li:hover ul.subs {
+    left: 0;
+    top: 34px;
+    width: 180px;
+
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+}
+#nav ul li {
+    width: 100%;
+}
+#nav ul li:hover > a {
+    background-color: #222222 !important;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* colors */
+.colorScheme {
+    height: 32px;
+    list-style: none outside none;
+    margin: 0 auto 25px;
+    width: 320px;
+}
+.colorScheme a {
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    margin: 0 5px;
+    width: 30px;
+}
+.colorScheme .red {
+    background-color: red;
+}
+.colorScheme .orange {
+    background-color: orange;
+}
+.colorScheme .pink {
+    background-color: pink;
+}
+.colorScheme .green {
+    background-color: green;
+}
+.colorScheme .blue {
+    background-color: blue;
+}
+.colorScheme .indigo {
+    background-color: indigo;
+}
+.colorScheme .violet {
+    background-color: violet;
+}
+.colorScheme .grey {
+    background-color: grey;
+}
+
+#red:target ~ #nav ul {
+    background-color: red;
+    border: 1px solid red;
+}
+#orange:target ~ #nav ul {
+    background-color: orange;
+    border: 1px solid orange;
+}
+#pink:target ~ #nav ul {
+    background-color: pink;
+    border: 1px solid pink;
+}
+#green:target ~ #nav ul {
+    background-color: green;
+    border: 1px solid green;
+}
+#blue:target ~ #nav ul {
+    background-color: blue;
+    border: 1px solid blue;
+}
+#indigo:target ~ #nav ul {
+    background-color: indigo;
+    border: 1px solid indigo;
+}
+#violet:target ~ #nav ul {
+    background-color: violet;
+    border: 1px solid violet;
+}
+#grey:target ~ #nav ul {
+    background-color: grey;
+    border: 1px solid grey;
+}
+
+#red:target ~ #nav li:hover > a {
+    background-color: red;
+}
+#orange:target ~ #nav li:hover > a {
+    background-color: orange;
+}
+#pink:target ~ #nav li:hover > a {
+    background-color: pink;
+}
+#green:target ~ #nav li:hover > a {
+    background-color: green;
+}
+#blue:target ~ #nav li:hover > a {
+    background-color: blue;
+}
+#indigo:target ~ #nav li:hover > a {
+    background-color: indigo;
+}
+#violet:target ~ #nav li:hover > a {
+    background-color: violet;
+}
+#grey:target ~ #nav li:hover > a {
+    background-color: grey;
+}

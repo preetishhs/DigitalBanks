@@ -1,0 +1,92 @@
+th,td {
+    padding: 5px;
+}
+
+body
+{
+padding-top:0px;
+margin:0px;
+background-image:url('bg5.jpg'); 
+background-repeat:repeat;
+}
+
+#sign
+{
+width:100%;
+height:70px;
+background-color:black;
+}
+
+#head1
+{
+width:100%;
+height:70px;
+background-color:black;
+}
+#head2
+{
+margin-left:auto;
+margin-right:auto;
+width:960px;
+}
+#cont
+{
+width 960px;
+height:700px;
+border:1px solid black;
+border-radius:5px;
+}
+
+#foot
+{
+width:100%;
+height:200px;
+background-color:black;
+}
+
+#text
+{
+width:960px;
+height:300px;
+z-index:5;
+border-radius:5px;
+background-color:#c9c9c9;
+margin-left:auto;
+margin-right:auto;
+padding-top:8	0px;
+text-align:center;
+
+font-size:30px;
+}
+
+#foot
+{
+width:100%;
+height:100px;
+background-color:black;
+}
+.foot
+{	height: 30px;
+    padding: 0;
+	margin-left:110px;;
+	position: relative; /* Ensures that the menu doesnt affect other elements */
+	color:White;	
+	font-size:14px; 
+}
+
+.foot li
+{
+	height: auto;
+	width: 140px;  /* Each menu item is 123px wide */
+	float: left;  /* This lines up the menu items horizontally */
+	border-right:1px solid #727272;
+	list-style: none;
+	text-align:center;
+}
+
+.foot a
+{
+color:white;
+}
+
+
